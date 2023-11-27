@@ -17,4 +17,4 @@ COPY convert_and_push.sh /app/
 
 RUN chmod +x convert_and_push.sh
 
-ENTRYPOINT ["/convert_and_push.sh"]
+ENTRYPOINT ["/app/convert_and_push.sh"]

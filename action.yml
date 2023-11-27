@@ -9,11 +9,11 @@ inputs:
     required: true
   version:
     description: 'Version identifier'
-    required: true
+    required: false
     default: ${{ github.ref_name }}
   test-report-filename:
     description: 'Filename of the JUnit XML test report'
-    required: true
+    required: false
     deafult: test_report.xml
 runs:
   using: 'docker'
