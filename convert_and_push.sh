@@ -3,7 +3,7 @@
 set -e
 
 validate_variables() {
-  required_vars=("AWS_ACCESS_KEY_ID" "AWS_SECRET_ACCESS_KEY")
+  required_vars=("AWS_ACCESS_KEY_ID" "AWS_SECRET_ACCESS_KEY" "AWS_DEFAULT_REGION")
 
   for var in "${required_vars[@]}"; do
     if [ -z "${!var}" ]; then
