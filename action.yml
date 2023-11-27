@@ -14,7 +14,7 @@ inputs:
   test-report-filename:
     description: 'Filename of the JUnit XML test report'
     required: false
-    deafult: test_report.xml
+    default: test_report.xml
 runs:
   using: 'docker'
   image: 'Dockerfile'
