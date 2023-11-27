@@ -1,5 +1,9 @@
 name: 'Convert and Push Test Report to S3'
-description: 'Convert JUnit XML to HTML, rename the file, and push to S3'
+description: 'Convert JUnit XML to HTML, rename the file with current date, and push to S3'
+author: 'Berdan Çağlar Aydın'
+branding:
+  icon: 'upload-cloud'
+  color: 'orange'
 inputs:
   s3-bucket-base-path:
     description: 'Base path of the S3 bucket'
