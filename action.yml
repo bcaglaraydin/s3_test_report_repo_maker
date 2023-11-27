@@ -19,5 +19,8 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - ${{ inputs.s3-bucket-base-path }} ${{ inputs.s3-path }} ${{ inputs.version }} ${{ inputs.test-report-filename }}
+    - ${{ inputs.s3-bucket-base-path }} 
+    - ${{ inputs.s3-path }} 
+    - ${{ inputs.version }} 
+    - ${{ inputs.test-report-filename }}
 
