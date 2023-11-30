@@ -37,7 +37,8 @@ copy_to_s3() {
 validate_variables "$@"
 echo "Variable validation successful. Continuing with the execution."
 
-test_report_filename=$(basename "$4" .xml)
+test_report_path="$4"
+test_report_filename=${test_report_path%.*}
 
 convert_xml_to_html
 rename_html_file
