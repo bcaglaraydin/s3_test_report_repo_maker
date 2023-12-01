@@ -34,7 +34,7 @@ copy_to_s3() {
   aws s3 cp "$new_filename.html" "$s3_full_path"
 }
 
-ls -Rß
+ls -R -la
 validate_variables "$@"
 echo "Variable validation successful. Continuing with the execution."
 
